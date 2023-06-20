@@ -65,9 +65,12 @@ npx thirdweb deploy
 **SwapRouter**: `0xE592427A0AEce92De3Edee1F18E0157C05861564`  
 **PositionManager**: `0xC36442b4a4522E871399CD717aBDD847Ab11FE88`
 
-**Pool(ARB/USDC 0.05%)**: `0x`  
-**UniV3Pool**: `0x`  
-**ConcentratedLPVault**: `0x`
+### ETH Testnet
+**Deployer**: `0xB90f608eC752fa2547Cbb43d6Ac3D10AE0601CF2`    
+**Pool(USDC/WETH 0.3%)**: `0x6337B3caf9C5236c7f3D1694410776119eDaF9FA `  
+**UniV3Pool**: `0x00f43e1b1d81d264ec4ee206296a6577863b4f5d	`  
+**ConcentratedLPVault**: `0xe2e2045fc9301230526a032e3cd1f2e866637521`
+
 
 ## License
 
