@@ -12,9 +12,9 @@ TokenizedVault is a DeFi platform that allows users to deposit and withdraw asse
 
 A smart contract that handles user deposits and withdrawals of assets, as well as the minting and burning of corresponding shares. The TokenizedVault keeps track of the total value locked (TVL) and the total shares for each supported asset.
 
-### 2. MultiAssetVault
+### 2. ContentratedLPVault
 
-An extension of the TokenizedVault that enables support for multiple assets. Users can deposit and withdraw various assets, and the MultiAssetVault automatically manages the conversion and distribution of shares.
+An extension of the TokenizedVault that enables support for uniswap v3 interaction. Users can deposit and withdraw various assets, and the ContentratedLPVault automatically manages the conversion and distribution of shares.
 
 ### 3. PriceFeedConsumer
 
@@ -65,9 +65,12 @@ npx thirdweb deploy
 **SwapRouter**: `0xE592427A0AEce92De3Edee1F18E0157C05861564`  
 **PositionManager**: `0xC36442b4a4522E871399CD717aBDD847Ab11FE88`
 
-**Pool(ARB/USDC 0.05%)**: `0x`  
-**UniV3Pool**: `0x`  
-**ConcentratedLPVault**: `0x`
+### ETH Testnet
+**Deployer**: `0xB90f608eC752fa2547Cbb43d6Ac3D10AE0601CF2`    
+**Pool(USDC/WETH 0.3%)**: `0x6337B3caf9C5236c7f3D1694410776119eDaF9FA `  
+**UniV3Pool**: `0x00f43e1b1d81d264ec4ee206296a6577863b4f5d	`  
+**ConcentratedLPVault**: `0xe2e2045fc9301230526a032e3cd1f2e866637521`
+
 
 ## License
 
