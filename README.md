@@ -12,9 +12,9 @@ TokenizedVault is a DeFi platform that allows users to deposit and withdraw asse
 
 A smart contract that handles user deposits and withdrawals of assets, as well as the minting and burning of corresponding shares. The TokenizedVault keeps track of the total value locked (TVL) and the total shares for each supported asset.
 
-### 2. MultiAssetVault
+### 2. ContentratedLPVault
 
-An extension of the TokenizedVault that enables support for multiple assets. Users can deposit and withdraw various assets, and the MultiAssetVault automatically manages the conversion and distribution of shares.
+An extension of the TokenizedVault that enables support for uniswap v3 interaction. Users can deposit and withdraw various assets, and the ContentratedLPVault automatically manages the conversion and distribution of shares.
 
 ### 3. PriceFeedConsumer
 
