@@ -177,8 +177,12 @@ contract ConcentratedLPVault is TokenizedVault {
         //IDEXPool pool = IDEXPool(sockets[0].getAttachables()[0]);
         (uint256 amount0, uint256 amount1) = pool.decreaseLiquidity(uint128(assets[0]), 0, 0);
 
-        (uint256 collected0, uint256 collected1) = pool.collect(address(this), uint128(assets[1]), uint128(assets[2]));
-
+        uint256 collected0 = 0;
+        uint256 collected1 = 0;
+        if (assets[1] != 0 || assets[2] != 0) {
+            (collected0, collected1) = pool.collect(address(this), uint128(assets[1]), uint128(assets[2]));
+        }
+        
         address[] memory tokens = pool.getTokens();
         address depositableTokenAddress = address(depositableToken);
 
